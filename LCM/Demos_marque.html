@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+<script src="logos.js"></script>
+<style>
+  html{scroll-behavior:smooth;}
+  html,body{margin:0;padding:0;background:#e7eaee;}
+  *{box-sizing:border-box;}
+  section[id]{scroll-margin-top:76px;}
+  .lcm-navlink{transition:background .14s,color .14s;}
+  .lcm-navlink:hover{background:#eef5f5;color:#122e51;}
+  input:focus,button:focus{outline:none;}
+  ::selection{background:#4ebdbc55;}
+</style>
+</helmet>
+<template id="__bundler_thumbnail" data-bg-color="#122e51">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="800" fill="#122e51"/>
+    <g transform="translate(600 360)">
+      <rect x="-150" y="-30" width="90" height="200" rx="45" transform="rotate(-18)" fill="#4ebdbc"/>
+      <rect x="-45" y="-40" width="90" height="210" rx="45" fill="#f7be58"/>
+      <rect x="60" y="-30" width="90" height="200" rx="45" transform="rotate(18)" fill="#f37a6e"/>
+    </g>
+    <text x="600" y="660" font-family="Arial,sans-serif" font-weight="700" font-size="64" fill="#ffffff" text-anchor="middle">Les Crayons Magiques</text>
+  </svg>
+</template>
+<div style="font-family:Inter,Helvetica,Arial,sans-serif;color:#122e51;max-width:1120px;margin:0 auto;padding:0 28px 100px;">
+
+  <!-- ============ COVER ============ -->
+  <section id="haut" data-screen-label="Cover" style="margin:0 -28px 64px;background:#122e51;border-radius:0 0 28px 28px;padding:56px 56px 48px;position:relative;overflow:hidden;">
+    <div style="position:absolute;right:-60px;top:-60px;width:280px;height:280px;border-radius:50%;background:#4ebdbc1f;"></div>
+    <div style="position:absolute;right:120px;bottom:-90px;width:200px;height:200px;border-radius:50%;background:#f7be581a;"></div>
+    <img src="assets/logo_lescrayonsmagiques_horizontal_blanc.png" alt="Les Crayons Magiques" style="height:60px;display:block;position:relative;"/>
+    <div style="font-size:13px;letter-spacing:3px;text-transform:uppercase;color:#4ebdbc;font-weight:600;margin:34px 0 10px;position:relative;">Charte appliquée · 2026</div>
+    <h1 style="font-family:'Baloo 2',sans-serif;font-weight:700;font-size:52px;line-height:1.02;margin:0;color:#fff;position:relative;max-width:760px;">Démonstrations d'application de marque</h1>
+    <p style="font-size:16.5px;line-height:1.65;color:#cdd7e4;max-width:620px;margin:20px 0 0;position:relative;">Quatre supports pour vérifier que le logo respire dans la vraie vie&nbsp;: une casquette brodée, un t-shirt, un courrier officiel et une signature e-mail. Chaque déclinaison suit les règles de la charte — versions claire/foncée, zones de respiration, et choix de la variante de logo adaptée au fond.</p>
+    <div style="display:flex;gap:10px;margin-top:30px;position:relative;flex-wrap:wrap;">
+      <div style="display:flex;align-items:center;gap:9px;background:#ffffff14;border:1px solid #ffffff22;padding:8px 14px;border-radius:999px;font-size:13px;color:#eaf0f7;"><span style="width:13px;height:13px;border-radius:50%;background:#4ebdbc;"></span>Turquoise #4ebdbc</div>
+      <div style="display:flex;align-items:center;gap:9px;background:#ffffff14;border:1px solid #ffffff22;padding:8px 14px;border-radius:999px;font-size:13px;color:#eaf0f7;"><span style="width:13px;height:13px;border-radius:50%;background:#f7be58;"></span>Jaune or #f7be58</div>
+      <div style="display:flex;align-items:center;gap:9px;background:#ffffff14;border:1px solid #ffffff22;padding:8px 14px;border-radius:999px;font-size:13px;color:#eaf0f7;"><span style="width:13px;height:13px;border-radius:50%;background:#f37a6e;"></span>Saumon #f37a6e</div>
+      <div style="display:flex;align-items:center;gap:9px;background:#ffffff14;border:1px solid #ffffff22;padding:8px 14px;border-radius:999px;font-size:13px;color:#eaf0f7;"><span style="width:13px;height:13px;border-radius:50%;background:#122e51;border:1px solid #ffffff44;"></span>Marine #122e51</div>
+    </div>
+  </section>
+
+  <!-- ============ MENU ============ -->
+  <nav style="position:sticky;top:12px;z-index:50;display:flex;justify-content:center;margin:0 0 44px;">
+    <div style="display:flex;gap:4px;align-items:center;background:#fffffff2;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid #e2e5ea;border-radius:999px;padding:6px;box-shadow:0 6px 22px #122e5117;">
+      <img src="assets/logo_lescrayonsmagiques_carre.png" alt="" style="width:26px;height:26px;margin:0 6px 0 6px;"/>
+      <a href="#casquette" class="lcm-navlink" style="text-decoration:none;font-size:13.5px;font-weight:600;color:#5a6472;padding:8px 15px;border-radius:999px;font-family:Inter,sans-serif;">Casquette</a>
+      <a href="#tshirt" class="lcm-navlink" style="text-decoration:none;font-size:13.5px;font-weight:600;color:#5a6472;padding:8px 15px;border-radius:999px;font-family:Inter,sans-serif;">T-shirt</a>
+      <a href="#document" class="lcm-navlink" style="text-decoration:none;font-size:13.5px;font-weight:600;color:#5a6472;padding:8px 15px;border-radius:999px;font-family:Inter,sans-serif;">Document A4</a>
+      <a href="#signature" class="lcm-navlink" style="text-decoration:none;font-size:13.5px;font-weight:600;color:#5a6472;padding:8px 15px;border-radius:999px;font-family:Inter,sans-serif;">Signature</a>
+    </div>
+  </nav>
+
+  <!-- ============ CASQUETTE ============ -->
+  <section id="casquette" data-screen-label="Casquette" style="margin-bottom:64px;">
+    <div style="display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;">
+      <span style="font-family:'Baloo 2',sans-serif;font-weight:700;font-size:15px;color:#4ebdbc;">01</span>
+      <h2 style="font-family:'Baloo 2',sans-serif;font-weight:700;font-size:30px;margin:0;color:#122e51;">Casquette brodée</h2>
+    </div>
+    <p style="font-size:15px;line-height:1.65;color:#46556b;max-width:75ch;margin:12px 0 0;">L'objet le plus exposé d'une école&nbsp;: il sort dans la cour, en sortie scolaire, sur les photos. La broderie ne supporte qu'un nombre limité de couleurs — la version <strong>couleur</strong> sur fond clair, et la version <strong>blanche</strong> sur la casquette marine. Le surpiqûre turquoise sur la visière reprend discrètement l'accent principal de la charte.</p>
+    <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:22px 0 18px;">
+      <span style="font-size:12.5px;font-weight:600;color:#7a8696;text-transform:uppercase;letter-spacing:1px;margin-right:4px;">Variante de logo</span>
+      <sc-for list="{{ capChips }}" as="c" hint-placeholder-count="5">
+        <button onClick="{{ c.onClick }}" style="{{ c.style }}">{{ c.label }}</button>
+      </sc-for>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
+      <!-- CAP LIGHT -->
+      <div style="background:#fff;border:1px solid #e2e5ea;border-radius:18px;padding:18px 18px 14px;box-shadow:0 1px 3px #122e510d;">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
+          <span style="font-family:'Baloo 2',sans-serif;font-weight:600;font-size:15px;color:#122e51;">Version claire</span>
+          <span style="font-size:11.5px;color:#8b95a3;background:#f1f3f6;padding:4px 9px;border-radius:6px;">crème · logo couleur</span>
+        </div>
+        <div style="background:radial-gradient(120% 120% at 50% 25%,#f7f8fa,#e9ecf1);border-radius:12px;padding:8px;">
+          <div style="position:relative;">
+          <svg viewBox="0 0 600 460" width="100%" style="display:block;">
+            <defs>
+              <linearGradient id="capCrownL" x1="0.2" y1="0" x2="0.8" y2="1"><stop offset="0%" stop-color="#fffefb"/><stop offset="55%" stop-color="#f4efe6"/><stop offset="100%" stop-color="#ddd6c8"/></linearGradient>
+              <linearGradient id="capBillL" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#ece6da"/><stop offset="100%" stop-color="#ccc4b2"/></linearGradient>
+              <radialGradient id="capSheenL" cx="42%" cy="30%" r="60%"><stop offset="0%" stop-color="#ffffffcc"/><stop offset="100%" stop-color="#ffffff00"/></radialGradient>
+              <filter id="capFabL"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch" result="n"/><feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.55 0"/></filter>
+              <clipPath id="capClipL"><path d="M120,300 C120,165 200,95 300,95 C400,95 480,165 480,300 C420,322 360,332 300,332 C240,332 180,322 120,300 Z"/></clipPath>
+            </defs>
+            <path d="M138,300 C180,322 240,333 300,333 C360,333 420,322 462,300 C456,356 400,402 300,408 C200,402 144,356 138,300 Z" fill="url(#capBillL)" stroke="#b9b09e" stroke-width="1.5"/>
+            <path d="M150,318 C200,330 250,335 300,335 C350,335 400,330 450,318" fill="none" stroke="#4ebdbc" stroke-width="2.4" stroke-dasharray="5 4" opacity="0.85"/>
+            <path d="M120,300 C120,165 200,95 300,95 C400,95 480,165 480,300 C420,322 360,332 300,332 C240,332 180,322 120,300 Z" fill="url(#capCrownL)" stroke="#c5bca9" stroke-width="1.5"/>
+            <rect x="0" y="0" width="600" height="460" filter="url(#capFabL)" clip-path="url(#capClipL)" opacity="0.05" style="mix-blend-mode:multiply"/>
+            <ellipse cx="300" cy="190" rx="190" ry="120" fill="url(#capSheenL)" clip-path="url(#capClipL)"/>
+            <path d="M300,108 C256,152 220,224 202,300" fill="none" stroke="#cdc4b1" stroke-width="2" stroke-dasharray="5 4"/>
+            <path d="M300,108 C344,152 380,224 398,300" fill="none" stroke="#cdc4b1" stroke-width="2" stroke-dasharray="5 4"/>
+            <circle cx="246" cy="196" r="4.5" fill="#d8cfbd"/><circle cx="354" cy="196" r="4.5" fill="#d8cfbd"/>
+            <circle cx="300" cy="106" r="11" fill="#efe9dd" stroke="#c5bca9" stroke-width="1.5"/>
+          </svg>
+          <img ref="{{ capLightRef }}" alt="logo brodé" style="position:absolute;left:38.7%;top:32%;width:22.7%;mix-blend-mode:multiply;"/>
+          </div>
+        </div>
+      </div>
+      <!-- CAP DARK -->
+      <div style="background:#fff;border:1px solid #e2e5ea;border-radius:18px;padding:18px 18px 14px;box-shadow:0 1px 3px #122e510d;">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
+          <span style="font-family:'Baloo 2',sans-serif;font-weight:600;font-size:15px;color:#122e51;">Version foncée</span>
+          <span style="font-size:11.5px;color:#8b95a3;background:#f1f3f6;padding:4px 9px;border-radius:6px;">marine · logo blanc</span>
+        </div>
+        <div style="background:radial-gradient(120% 120% at 50% 25%,#eef1f5,#dde2e9);border-radius:12px;padding:8px;">
+          <div style="position:relative;">
+          <svg viewBox="0 0 600 460" width="100%" style="display:block;">
+            <defs>
+              <linearGradient id="capCrownD" x1="0.2" y1="0" x2="0.8" y2="1"><stop offset="0%" stop-color="#1d4674"/><stop offset="55%" stop-color="#142f52"/><stop offset="100%" stop-color="#0c2143"/></linearGradient>
+              <linearGradient id="capBillD" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#15355b"/><stop offset="100%" stop-color="#091a36"/></linearGradient>
+              <radialGradient id="capSheenD" cx="42%" cy="28%" r="60%"><stop offset="0%" stop-color="#5b86b540"/><stop offset="100%" stop-color="#5b86b500"/></radialGradient>
+              <filter id="capFabD"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch" result="n"/><feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.6 0"/></filter>
+              <clipPath id="capClipD"><path d="M120,300 C120,165 200,95 300,95 C400,95 480,165 480,300 C420,322 360,332 300,332 C240,332 180,322 120,300 Z"/></clipPath>
+            </defs>
+            <path d="M138,300 C180,322 240,333 300,333 C360,333 420,322 462,300 C456,356 400,402 300,408 C200,402 144,356 138,300 Z" fill="url(#capBillD)" stroke="#06122a" stroke-width="1.5"/>
+            <path d="M150,318 C200,330 250,335 300,335 C350,335 400,330 450,318" fill="none" stroke="#4ebdbc" stroke-width="2.4" stroke-dasharray="5 4"/>
+            <path d="M120,300 C120,165 200,95 300,95 C400,95 480,165 480,300 C420,322 360,332 300,332 C240,332 180,322 120,300 Z" fill="url(#capCrownD)" stroke="#0a1d3a" stroke-width="1.5"/>
+            <rect x="0" y="0" width="600" height="460" filter="url(#capFabD)" clip-path="url(#capClipD)" opacity="0.10" style="mix-blend-mode:screen"/>
+            <ellipse cx="300" cy="185" rx="190" ry="120" fill="url(#capSheenD)" clip-path="url(#capClipD)"/>
+            <path d="M300,108 C256,152 220,224 202,300" fill="none" stroke="#2a4d78" stroke-width="2" stroke-dasharray="5 4"/>
+            <path d="M300,108 C344,152 380,224 398,300" fill="none" stroke="#2a4d78" stroke-width="2" stroke-dasharray="5 4"/>
+            <circle cx="246" cy="196" r="4.5" fill="#274a73"/><circle cx="354" cy="196" r="4.5" fill="#274a73"/>
+            <circle cx="300" cy="106" r="11" fill="#173a61" stroke="#0a1d3a" stroke-width="1.5"/>
+          </svg>
+          <img ref="{{ capDarkRef }}" alt="logo brodé" style="position:absolute;left:38.7%;top:32%;width:22.7%;"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ T-SHIRT ============ -->
+  <section id="tshirt" data-screen-label="T-shirt" style="margin-bottom:64px;">
+    <div style="display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;">
+      <span style="font-family:'Baloo 2',sans-serif;font-weight:700;font-size:15px;color:#f37a6e;">02</span>
+      <h2 style="font-family:'Baloo 2',sans-serif;font-weight:700;font-size:30px;margin:0;color:#122e51;">T-shirt · simulation textile</h2>
+    </div>
+    <p style="font-size:15px;line-height:1.65;color:#46556b;max-width:75ch;margin:12px 0 0;">Le logo carré (icône + nom empilés) est le format qui tient le mieux sur un buste&nbsp;: il reste lisible même petit et centré. La sérigraphie épouse le grain du coton — sur le t-shirt clair, le logo est posé en <em>multiply</em> pour qu'il prenne la lumière du tissu&nbsp;; sur le marine, c'est la version blanche, seule garante d'un contraste suffisant.</p>
+    <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:22px 0 18px;">
+      <span style="font-size:12.5px;font-weight:600;color:#7a8696;text-transform:uppercase;letter-spacing:1px;margin-right:4px;">Variante de logo</span>
+      <sc-for list="{{ shirtChips }}" as="c" hint-placeholder-count="5">
+        <button onClick="{{ c.onClick }}" style="{{ c.style }}">{{ c.label }}</button>
+      </sc-for>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
+      <!-- SHIRT LIGHT -->
+      <div style="background:#fff;border:1px solid #e2e5ea;border-radius:18px;padding:18px 18px 14px;box-shadow:0 1px 3px #122e510d;">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
+          <span style="font-family:'Baloo 2',sans-serif;font-weight:600;font-size:15px;color:#122e51;">Version claire</span>
+          <span style="font-size:11.5px;color:#8b95a3;background:#f1f3f6;padding:4px 9px;border-radius:6px;">blanc cassé · logo couleur</span>
+        </div>
+        <div style="background:radial-gradient(120% 120% at 50% 20%,#f7f8fa,#e9ecf1);border-radius:12px;padding:6px;">
+          <div style="position:relative;">
+          <svg viewBox="0 0 600 640" width="100%" style="display:block;">
+            <defs>
+              <radialGradient id="teeL" cx="50%" cy="34%" r="78%"><stop offset="0%" stop-color="#ffffff"/><stop offset="58%" stop-color="#f4f2ed"/><stop offset="100%" stop-color="#ddd9d1"/></radialGradient>
+              <linearGradient id="teeLside" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#00000026"/><stop offset="13%" stop-color="#00000000"/><stop offset="87%" stop-color="#00000000"/><stop offset="100%" stop-color="#00000026"/></linearGradient>
+              <filter id="teeFabL"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/><feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.5 0"/></filter>
+              <filter id="softL"><feGaussianBlur stdDeviation="9"/></filter>
+              <clipPath id="teeClipL"><path d="M250,72 C233,74 216,77 200,82 L120,150 L96,212 C140,230 156,233 172,236 L184,560 L416,560 L428,236 C444,233 460,230 504,212 L480,150 L400,82 C384,77 367,74 350,72 C334,90 318,100 300,100 C282,100 266,90 250,72 Z"/></clipPath>
+            </defs>
+            <path d="M250,72 C233,74 216,77 200,82 L120,150 L96,212 C140,230 156,233 172,236 L184,560 L416,560 L428,236 C444,233 460,230 504,212 L480,150 L400,82 C384,77 367,74 350,72 C334,90 318,100 300,100 C282,100 266,90 250,72 Z" fill="url(#teeL)" stroke="#cdc9c0" stroke-width="1.5"/>
+            <g clip-path="url(#teeClipL)">
+              <path d="M250,72 C233,74 216,77 200,82 L120,150 L96,212 C140,230 156,233 172,236 L184,560 L416,560 L428,236 C444,233 460,230 504,212 L480,150 L400,82 Z" fill="url(#teeLside)"/>
+              <ellipse cx="206" cy="400" rx="26" ry="150" fill="#00000010" filter="url(#softL)"/>
+              <ellipse cx="394" cy="400" rx="26" ry="150" fill="#00000010" filter="url(#softL)"/>
+              <ellipse cx="300" cy="150" rx="120" ry="34" fill="#ffffff66" filter="url(#softL)"/>
+              <rect x="0" y="0" width="600" height="640" filter="url(#teeFabL)" opacity="0.05" style="mix-blend-mode:overlay"/>
+            </g>
+            <path d="M250,72 C266,90 282,100 300,100 C318,100 334,90 350,72" fill="none" stroke="#d3cfc6" stroke-width="8"/>
+            <path d="M252,80 C267,95 283,104 300,104 C317,104 333,95 348,80" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.7"/>
+            <path d="M188,548 L412,548" stroke="#cfcbc2" stroke-width="1.5" stroke-dasharray="5 4"/>
+          </svg>
+          <img ref="{{ shirtLightRef }}" alt="logo sérigraphié" style="position:absolute;left:34.7%;top:30.9%;width:30.7%;mix-blend-mode:multiply;"/>
+          </div>
+        </div>
+      </div>
+      <!-- SHIRT DARK -->
+      <div style="background:#fff;border:1px solid #e2e5ea;border-radius:18px;padding:18px 18px 14px;box-shadow:0 1px 3px #122e510d;">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
+          <span style="font-family:'Baloo 2',sans-serif;font-weight:600;font-size:15px;color:#122e51;">Version foncée</span>
+          <span style="font-size:11.5px;color:#8b95a3;background:#f1f3f6;padding:4px 9px;border-radius:6px;">marine · logo blanc</span>
+        </div>
+        <div style="background:radial-gradient(120% 120% at 50% 20%,#eef1f5,#dde2e9);border-radius:12px;padding:6px;">
+          <div style="position:relative;">
+          <svg viewBox="0 0 600 640" width="100%" style="display:block;">
+            <defs>
+              <radialGradient id="teeD" cx="50%" cy="34%" r="78%"><stop offset="0%" stop-color="#1d4673"/><stop offset="58%" stop-color="#142f52"/><stop offset="100%" stop-color="#0b1f3f"/></radialGradient>
+              <linearGradient id="teeDside" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#00000038"/><stop offset="13%" stop-color="#00000000"/><stop offset="87%" stop-color="#00000000"/><stop offset="100%" stop-color="#00000038"/></linearGradient>
+              <filter id="teeFabD"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" result="n"/><feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.55 0"/></filter>
+              <filter id="softD"><feGaussianBlur stdDeviation="9"/></filter>
+              <clipPath id="teeClipD"><path d="M250,72 C233,74 216,77 200,82 L120,150 L96,212 C140,230 156,233 172,236 L184,560 L416,560 L428,236 C444,233 460,230 504,212 L480,150 L400,82 C384,77 367,74 350,72 C334,90 318,100 300,100 C282,100 266,90 250,72 Z"/></clipPath>
+            </defs>
+            <path d="M250,72 C233,74 216,77 200,82 L120,150 L96,212 C140,230 156,233 172,236 L184,560 L416,560 L428,236 C444,233 460,230 504,212 L480,150 L400,82 C384,77 367,74 350,72 C334,90 318,100 300,100 C282,100 266,90 250,72 Z" fill="url(#teeD)" stroke="#0a1d3a" stroke-width="1.5"/>
+            <g clip-path="url(#teeClipD)">
+              <path d="M250,72 C233,74 216,77 200,82 L120,150 L96,212 C140,230 156,233 172,236 L184,560 L416,560 L428,236 C444,233 460,230 504,212 L480,150 L400,82 Z" fill="url(#teeDside)"/>
+              <ellipse cx="206" cy="400" rx="26" ry="150" fill="#00000026" filter="url(#softD)"/>
+              <ellipse cx="394" cy="400" rx="26" ry="150" fill="#00000026" filter="url(#softD)"/>
+              <ellipse cx="300" cy="150" rx="120" ry="34" fill="#5b86b540" filter="url(#softD)"/>
+              <rect x="0" y="0" width="600" height="640" filter="url(#teeFabD)" opacity="0.10" style="mix-blend-mode:screen"/>
+            </g>
+            <path d="M250,72 C266,90 282,100 300,100 C318,100 334,90 350,72" fill="none" stroke="#0d2244" stroke-width="8"/>
+            <path d="M252,80 C267,95 283,104 300,104 C317,104 333,95 348,80" fill="none" stroke="#3a5d88" stroke-width="2" opacity="0.6"/>
+            <path d="M188,548 L412,548" stroke="#26456c" stroke-width="1.5" stroke-dasharray="5 4"/>
+          </svg>
+          <img ref="{{ shirtDarkRef }}" alt="logo sérigraphié" style="position:absolute;left:34.7%;top:30.9%;width:30.7%;"/>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="height:1px;background:#e6e8ec;margin:36px 0 26px;"></div>
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap;">
+      <div>
+        <h3 style="font-family:'Baloo 2',sans-serif;font-weight:600;font-size:21px;margin:0;color:#122e51;">Emplacements — cœur &amp; dos</h3>
+        <p style="font-size:14.5px;line-height:1.6;color:#46556b;max-width:64ch;margin:8px 0 0;">Le combo le plus courant pour un vêtement d'école&nbsp;: un petit logo « cœur » discret côté poitrine, et le grand logo centré dans le dos pour la visibilité de loin — cour de récré, sortie scolaire, photo de classe.</p>
+      </div>
+      <div style="display:flex;gap:8px;flex-shrink:0;">
+        <button onClick="{{ setPlaceLight }}" style="{{ placeLightBtn }}">Clair</button>
+        <button onClick="{{ setPlaceDark }}" style="{{ placeDarkBtn }}">Foncé</button>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:18px;">
+      <!-- FRONT cœur -->
+      <div style="background:#fff;border:1px solid #e2e5ea;border-radius:18px;padding:18px 18px 14px;box-shadow:0 1px 3px #122e510d;">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
+          <span style="font-family:'Baloo 2',sans-serif;font-weight:600;font-size:15px;color:#122e51;">Devant · emplacement cœur</span>
+          <span style="font-size:11.5px;color:#8b95a3;background:#f1f3f6;padding:4px 9px;border-radius:6px;">{{ placeBadge }}</span>
+        </div>
+        <div style="background:radial-gradient(120% 120% at 50% 20%,#f4f6f9,#e6eaef);border-radius:12px;padding:6px;">
+          <div style="position:relative;">
+            <svg viewBox="0 0 600 640" width="100%" style="display:block;">
+              <defs>
+                <radialGradient id="teePF_L" cx="50%" cy="34%" r="78%"><stop offset="0%" stop-color="#ffffff"/><stop offset="58%" stop-color="#f4f2ed"/><stop offset="100%" stop-color="#ddd9d1"/></radialGradient>
+                <radialGradient id="teePF_D" cx="50%" cy="34%" r="78%"><stop offset="0%" stop-color="#1d4673"/><stop offset="58%" stop-color="#142f52"/><stop offset="100%" stop-color="#0b1f3f"/></radialGradient>
+                <filter id="softPF"><feGaussianBlur stdDeviation="9"/></filter>
+                <clipPath id="clipPF"><path d="M250,72 C233,74 216,77 200,82 L120,150 L96,212 C140,230 156,233 172,236 L184,560 L416,560 L428,236 C444,233 460,230 504,212 L480,150 L400,82 C384,77 367,74 350,72 C334,90 318,100 300,100 C282,100 266,90 250,72 Z"/></clipPath>
+              </defs>
+              <path d="M250,72 C233,74 216,77 200,82 L120,150 L96,212 C140,230 156,233 172,236 L184,560 L416,560 L428,236 C444,233 460,230 504,212 L480,150 L400,82 C384,77 367,74 350,72 C334,90 318,100 300,100 C282,100 266,90 250,72 Z" fill="url(#{{ placeFrontGrad }})" stroke="{{ placeStroke }}" stroke-width="1.5"/>
+              <g clip-path="url(#clipPF)">
+                <ellipse cx="206" cy="400" rx="26" ry="150" fill="#0000001a" filter="url(#softPF)"/>
+                <ellipse cx="394" cy="400" rx="26" ry="150" fill="#0000001a" filter="url(#softPF)"/>
+              </g>
+              <path d="M250,72 C266,90 282,100 300,100 C318,100 334,90 350,72" fill="none" stroke="{{ placeCollarStroke }}" stroke-width="8"/>
+              <path d="M188,548 L412,548" stroke="{{ placeSeam }}" stroke-width="1.5" stroke-dasharray="5 4"/>
+            </svg>
+            <img ref="{{ placeFrontRef }}" alt="logo cœur" style="position:absolute;left:56%;top:27.5%;width:13.5%;mix-blend-mode:{{ placeBlend }};"/>
+          </div>
+        </div>
+      </div>
+      <!-- BACK dos -->
+      <div style="background:#fff;border:1px solid #e2e5ea;border-radius:18px;padding:18px 18px 14px;box-shadow:0 1px 3px #122e510d;">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
+          <span style="font-family:'Baloo 2',sans-serif;font-weight:600;font-size:15px;color:#122e51;">Dos · grand logo</span>
+          <span style="font-size:11.5px;color:#8b95a3;background:#f1f3f6;padding:4px 9px;border-radius:6px;">vue arrière</span>
+        </div>
+        <div style="background:radial-gradient(120% 120% at 50% 20%,#f4f6f9,#e6eaef);border-radius:12px;padding:6px;">
+          <div style="position:relative;">
+            <svg viewBox="0 0 600 640" width="100%" style="display:block;">
+              <defs>
+                <radialGradient id="teePB_L" cx="50%" cy="34%" r="78%"><stop offset="0%" stop-color="#ffffff"/><stop offset="58%" stop-color="#f4f2ed"/><stop offset="100%" stop-color="#ddd9d1"/></radialGradient>
+                <radialGradient id="teePB_D" cx="50%" cy="34%" r="78%"><stop offset="0%" stop-color="#1d4673"/><stop offset="58%" stop-color="#142f52"/><stop offset="100%" stop-color="#0b1f3f"/></radialGradient>
+                <filter id="softPB"><feGaussianBlur stdDeviation="9"/></filter>
+                <clipPath id="clipPB"><path d="M250,72 C233,74 216,77 200,82 L120,150 L96,212 C140,230 156,233 172,236 L184,560 L416,560 L428,236 C444,233 460,230 504,212 L480,150 L400,82 C384,77 367,74 350,72 C336,82 318,88 300,88 C282,88 264,82 250,72 Z"/></clipPath>
+              </defs>
+              <path d="M250,72 C233,74 216,77 200,82 L120,150 L96,212 C140,230 156,233 172,236 L184,560 L416,560 L428,236 C444,233 460,230 504,212 L480,150 L400,82 C384,77 367,74 350,72 C336,82 318,88 300,88 C282,88 264,82 250,72 Z" fill="url(#{{ placeBackGrad }})" stroke="{{ placeStroke }}" stroke-width="1.5"/>
+              <g clip-path="url(#clipPB)">
+                <ellipse cx="206" cy="400" rx="26" ry="150" fill="#0000001a" filter="url(#softPB)"/>
+                <ellipse cx="394" cy="400" rx="26" ry="150" fill="#0000001a" filter="url(#softPB)"/>
+              </g>
+              <path d="M250,72 C264,82 282,88 300,88 C318,88 336,82 350,72" fill="none" stroke="{{ placeCollarStroke }}" stroke-width="7"/>
+              <rect x="276" y="74" width="48" height="9" rx="3" fill="{{ placeSeam }}" opacity="0.7"/>
+              <path d="M188,548 L412,548" stroke="{{ placeSeam }}" stroke-width="1.5" stroke-dasharray="5 4"/>
+            </svg>
+            <img ref="{{ placeBackRef }}" alt="logo dos" style="position:absolute;left:32%;top:22%;width:36%;mix-blend-mode:{{ placeBlend }};"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DOCUMENT A4 ============ -->
+  <section id="document" data-screen-label="Document A4" style="margin-bottom:64px;">
+    <div style="display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;">
+      <span style="font-family:'Baloo 2',sans-serif;font-weight:700;font-size:15px;color:#f7be58;">03</span>
+      <h2 style="font-family:'Baloo 2',sans-serif;font-weight:700;font-size:30px;margin:0;color:#122e51;">Document A4 · note aux parents</h2>
+    </div>
+    <p style="font-size:15px;line-height:1.65;color:#46556b;max-width:75ch;margin:12px 0 0;">En-tête et pied de page normalisés pour tout courrier sortant. L'en-tête associe le logo horizontal aux coordonnées officielles&nbsp;; le filet tricolore (turquoise / jaune / saumon) rappelle les trois crayons sans surcharger. Le pied réunit adresse, téléphone et mention de l'académie — discret, en gris, pour rester sous le contenu.</p>
+    <div style="position:relative;background:#f3f4f6;border:1px solid #e2e5ea;border-radius:18px;padding:46px 24px;margin-top:22px;display:flex;justify-content:center;">
+      <span style="position:absolute;top:64px;left:26px;font-size:10.5px;font-weight:700;letter-spacing:1.5px;color:#4ebdbc;background:#fff;border:1px solid #cfeceb;padding:5px 9px;border-radius:6px;">EN-TÊTE</span>
+      <span style="position:absolute;bottom:64px;left:26px;font-size:10.5px;font-weight:700;letter-spacing:1.5px;color:#f37a6e;background:#fff;border:1px solid #f6d6d1;padding:5px 9px;border-radius:6px;">PIED DE PAGE</span>
+      <!-- A4 page -->
+      <div style="width:100%;max-width:600px;aspect-ratio:210/297;background:#fff;box-shadow:0 8px 30px #122e5126;border-radius:3px;display:flex;flex-direction:column;padding:40px 44px;">
+        <!-- header -->
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;">
+          <img src="assets/logo_lescrayonsmagiques_horizontal.png" alt="Les Crayons Magiques" style="height:46px;"/>
+          <div style="text-align:right;font-size:9.5px;line-height:1.5;color:#5a6678;">École primaire publique<br/>Académie de Nancy-Metz · Zone B<br/>RNE 0573257F</div>
+        </div>
+        <div style="display:flex;gap:4px;margin-top:14px;">
+          <div style="height:5px;border-radius:3px;background:#4ebdbc;flex:5;"></div>
+          <div style="height:5px;border-radius:3px;background:#f7be58;flex:2;"></div>
+          <div style="height:5px;border-radius:3px;background:#f37a6e;flex:2;"></div>
+        </div>
+        <!-- body -->
+        <div style="margin-top:30px;flex:1;">
+          <div style="font-size:9.5px;color:#8b95a3;letter-spacing:1px;text-transform:uppercase;">Tressange, le 10 juin 2026</div>
+          <h3 style="font-family:'Baloo 2',sans-serif;font-weight:700;font-size:23px;color:#122e51;margin:8px 0 4px;">Note d'information aux parents</h3>
+          <div style="font-size:11px;color:#4ebdbc;font-weight:600;margin-bottom:18px;">Objet&nbsp;: exposition de fin d'année & réunion de rentrée</div>
+          <p style="font-size:11.5px;line-height:1.7;color:#33425a;margin:0 0 12px;">Chers parents,</p>
+          <p style="font-size:11.5px;line-height:1.7;color:#33425a;margin:0 0 12px;">Les enfants ont travaillé toute l'année à créer, dessiner et imaginer. Nous avons le plaisir de vous convier à l'<strong>exposition des œuvres</strong> qui se tiendra dans le préau de l'école&nbsp;:</p>
+          <div style="background:#f6fafa;border-left:3px solid #4ebdbc;padding:11px 14px;border-radius:0 8px 8px 0;margin:0 0 14px;">
+            <div style="font-size:11.5px;color:#122e51;line-height:1.7;"><strong>Vendredi 27 juin 2026</strong>, de 16h30 à 18h30<br/>Préau de l'école — 3 rue de la Forêt, Tressange</div>
+          </div>
+          <p style="font-size:11.5px;line-height:1.7;color:#33425a;margin:0 0 8px;">Merci de bien vouloir noter également les points suivants pour la rentrée de septembre&nbsp;:</p>
+          <ul style="font-size:11.5px;line-height:1.7;color:#33425a;margin:0 0 14px;padding-left:18px;">
+            <li>Fournitures&nbsp;: la liste sera distribuée le jour de l'exposition.</li>
+            <li>Réunion de rentrée&nbsp;: mardi 2 septembre à 18h00.</li>
+            <li>Inscriptions périscolaires ouvertes jusqu'au 15 juillet.</li>
+          </ul>
+          <p style="font-size:11.5px;line-height:1.7;color:#33425a;margin:0 0 4px;">Nous vous remercions de votre confiance et vous souhaitons un bel été.</p>
+          <div style="margin-top:16px;font-size:11.5px;color:#33425a;line-height:1.6;">L'équipe pédagogique<br/><span style="font-family:'Baloo 2',sans-serif;font-weight:600;color:#122e51;">Les Crayons Magiques</span></div>
+        </div>
+        <!-- footer -->
+        <div style="display:flex;gap:4px;margin-bottom:10px;">
+          <div style="height:3px;border-radius:2px;background:#f37a6e;flex:2;"></div>
+          <div style="height:3px;border-radius:2px;background:#f7be58;flex:2;"></div>
+          <div style="height:3px;border-radius:2px;background:#4ebdbc;flex:5;"></div>
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:center;font-size:8.8px;color:#8b95a3;line-height:1.5;">
+          <div>3 rue de la Forêt · 57710 Tressange &nbsp;·&nbsp; Tél. 03 82 50 34 70</div>
+          <div style="text-align:right;">contact@lescrayonsmagiques.fr</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SIGNATURE EMAIL ============ -->
+  <section id="signature" data-screen-label="Signature e-mail" style="margin-bottom:40px;">
+    <div style="display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;">
+      <span style="font-family:'Baloo 2',sans-serif;font-weight:700;font-size:15px;color:#122e51;">04</span>
+      <h2 style="font-family:'Baloo 2',sans-serif;font-weight:700;font-size:30px;margin:0;color:#122e51;">Signature e-mail</h2>
+    </div>
+    <p style="font-size:15px;line-height:1.65;color:#46556b;max-width:75ch;margin:12px 0 0;">Construite en tableau HTML à styles en ligne — la seule technique qui survit à Gmail, Outlook et Apple Mail. Police web-safe (Arial) volontairement, car les boîtes mail ne chargent pas Baloo&nbsp;2. Les trois pastilles de couleur devant chaque coordonnée réintroduisent l'ADN des trois crayons. Modifiez les champs à gauche, basculez clair/foncé, puis copiez le code prêt à coller.</p>
+
+    <div style="display:grid;grid-template-columns:300px 1fr;gap:20px;margin-top:22px;align-items:start;">
+      <!-- controls -->
+      <div style="background:#fff;border:1px solid #e2e5ea;border-radius:18px;padding:20px;box-shadow:0 1px 3px #122e510d;">
+        <div style="font-family:'Baloo 2',sans-serif;font-weight:600;font-size:15px;color:#122e51;margin-bottom:14px;">Vos coordonnées</div>
+        <sc-for list="{{ sigFields }}" as="f" hint-placeholder-count="5">
+          <label style="display:block;margin-bottom:12px;">
+            <span style="display:block;font-size:11px;font-weight:600;color:#7a8696;text-transform:uppercase;letter-spacing:0.8px;margin-bottom:5px;">{{ f.label }}</span>
+            <input value="{{ f.value }}" onChange="{{ f.onChange }}" style="width:100%;padding:9px 11px;border:1.5px solid #d7dae0;border-radius:9px;font-size:13.5px;color:#122e51;font-family:Inter,sans-serif;"/>
+          </label>
+        </sc-for>
+        <div style="height:1px;background:#eceef1;margin:6px 0 16px;"></div>
+        <span style="display:block;font-size:11px;font-weight:600;color:#7a8696;text-transform:uppercase;letter-spacing:0.8px;margin-bottom:8px;">Fond</span>
+        <div style="display:flex;gap:8px;margin-bottom:16px;">
+          <button onClick="{{ setSigLight }}" style="{{ sigLightBtn }}">Clair</button>
+          <button onClick="{{ setSigDark }}" style="{{ sigDarkBtn }}">Foncé</button>
+        </div>
+        <button onClick="{{ copySig }}" style="width:100%;padding:12px;border:none;border-radius:10px;background:#122e51;color:#fff;font-size:14px;font-weight:600;font-family:Inter,sans-serif;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;">{{ copyLabel }}</button>
+        <div style="font-size:11px;color:#9aa3b0;text-align:center;margin-top:8px;line-height:1.5;">Copié en HTML enrichi — collez directement dans les réglages de signature de votre messagerie.</div>
+      </div>
+
+      <!-- preview -->
+      <div style="display:flex;flex-direction:column;gap:12px;">
+        <div style="background:#fff;border:1px solid #e2e5ea;border-radius:18px;overflow:hidden;box-shadow:0 1px 3px #122e510d;">
+          <div style="display:flex;align-items:center;gap:8px;padding:11px 16px;border-bottom:1px solid #eef0f3;background:#fafbfc;">
+            <span style="width:11px;height:11px;border-radius:50%;background:#f37a6e;"></span>
+            <span style="width:11px;height:11px;border-radius:50%;background:#f7be58;"></span>
+            <span style="width:11px;height:11px;border-radius:50%;background:#4ebdbc;"></span>
+            <span style="margin-left:8px;font-size:12px;color:#9aa3b0;">Nouveau message — aperçu</span>
+          </div>
+          <div style="padding:30px;background:{{ sigCanvasBg }};">
+            <div style="font-size:13px;color:{{ sigMutedColor }};margin-bottom:4px;">Cordialement,</div>
+            <!-- signature block -->
+            <table cellpadding="0" cellspacing="0" style="border-collapse:collapse;font-family:Arial,Helvetica,sans-serif;">
+              <tbody><tr>
+                <td style="padding-right:18px;vertical-align:top;">
+                  <img ref="{{ sigRef }}" alt="Les Crayons Magiques" width="68" height="68" style="display:block;width:68px;height:68px;"/>
+                </td>
+                <td style="border-left:2px solid #4ebdbc;padding-left:18px;vertical-align:top;">
+                  <div style="font-size:17px;font-weight:bold;color:{{ sigNameColor }};line-height:1.2;">{{ sigName }}</div>
+                  <div style="font-size:12.5px;color:#f37a6e;font-weight:bold;margin-top:2px;">{{ sigRole }}</div>
+                  <div style="font-size:12.5px;color:{{ sigTextColor }};margin-top:9px;line-height:1.8;">
+                    <div><span style="color:#4ebdbc;font-weight:bold;">●</span>&nbsp; {{ sigEmail }}</div>
+                    <div><span style="color:#f7be58;font-weight:bold;">●</span>&nbsp; {{ sigPhone }}</div>
+                    <div><span style="color:#f37a6e;font-weight:bold;">●</span>&nbsp; {{ sigAddress }}</div>
+                  </div>
+                </td>
+              </tr></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = {
+    capVariant: 'auto',
+    shirtVariant: 'auto',
+    teeBackDark: false,
+    sigDark: false,
+    sigName: 'Elodie Steiner',
+    sigRole: 'Directrice de l\u2019\u00e9cole',
+    sigEmail: 'elodie.steiner@lescrayonsmagiques.fr',
+    sigPhone: '03 82 50 34 70',
+    sigAddress: '3 rue de la For\u00eat, 57710 Tressange',
+    copied: false,
+  };
+
+  componentDidMount() {
+    if (!window.LCM_LOGOS) {
+      this._logoIv = setInterval(() => {
+        if (window.LCM_LOGOS) { clearInterval(this._logoIv); this.forceUpdate(); }
+      }, 80);
+    }
+  }
+  componentWillUnmount() { clearInterval(this._logoIv); clearTimeout(this._t); }
+  logoUrl(shape, variant) {
+    const suf = (variant === 'couleur' || !variant) ? '' : '_' + variant;
+    const key = shape + suf;
+    const m = window.LCM_LOGOS || {};
+    return m[key] || ('assets/logo_lescrayonsmagiques_' + key + '.png');
+  }
+  logoUrlAbs(shape, variant) {
+    const suf = (variant === 'couleur' || !variant) ? '' : '_' + variant;
+    return 'https://joaofmsilva1979.github.io/lescrayonsmagiques/PNG/logo_lescrayonsmagiques_' + shape + suf + '.png';
+  }
+  resolve(variant, dark) {
+    return variant === 'auto' ? (dark ? 'blanc' : 'couleur') : variant;
+  }
+  chipStyle(active) {
+    return 'padding:7px 14px;border-radius:999px;font-family:Inter,sans-serif;font-size:12.5px;font-weight:600;cursor:pointer;transition:all .12s;' +
+      (active
+        ? 'border:1.5px solid #122e51;background:#122e51;color:#fff;'
+        : 'border:1.5px solid #d7dae0;background:#fff;color:#5a6472;');
+  }
+  buildChips(current, setter) {
+    const opts = [['auto', 'Auto'], ['couleur', 'Couleur'], ['blanc', 'Blanc'], ['noir', 'Noir'], ['gris', 'Gris']];
+    return opts.map(function (o) {
+      return { value: o[0], label: o[1], active: current === o[0], style: this.chipStyle(current === o[0]), onClick: function () { setter(o[0]); } };
+    }, this);
+  }
+
+  setField = (key) => (e) => { const v = e.target.value; this.setState({ [key]: v }); };
+
+  buildSigHtml() {
+    const s = this.state;
+    const dark = s.sigDark;
+    const logo = this.logoUrlAbs('carre', dark ? 'blanc' : 'couleur');
+    const nameColor = dark ? '#ffffff' : '#122e51';
+    const textColor = dark ? '#dbe3ee' : '#122e51';
+    const esc = (t) => String(t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    const wrapOpen = dark
+      ? '<table cellpadding="0" cellspacing="0" style="border-collapse:collapse;background:#122e51;border-radius:10px;"><tr><td style="padding:18px 22px;">'
+      : '';
+    const wrapClose = dark ? '</td></tr></table>' : '';
+    return wrapOpen +
+      '<table cellpadding="0" cellspacing="0" style="border-collapse:collapse;font-family:Arial,Helvetica,sans-serif;">' +
+      '<tr>' +
+      '<td style="padding-right:18px;vertical-align:top;"><img src="' + logo + '" alt="Les Crayons Magiques" width="68" height="68" style="display:block;width:68px;height:68px;border:0;"></td>' +
+      '<td style="border-left:2px solid #4ebdbc;padding-left:18px;vertical-align:top;">' +
+      '<div style="font-size:17px;font-weight:bold;color:' + nameColor + ';line-height:1.2;font-family:Arial,Helvetica,sans-serif;">' + esc(s.sigName) + '</div>' +
+      '<div style="font-size:12px;color:#f37a6e;font-weight:bold;margin-top:2px;font-family:Arial,Helvetica,sans-serif;">' + esc(s.sigRole) + '</div>' +
+      '<div style="font-size:12px;color:' + textColor + ';margin-top:9px;line-height:1.8;font-family:Arial,Helvetica,sans-serif;">' +
+      '<div><span style="color:#4ebdbc;font-weight:bold;">&#9679;</span>&nbsp; ' + esc(s.sigEmail) + '</div>' +
+      '<div><span style="color:#f7be58;font-weight:bold;">&#9679;</span>&nbsp; ' + esc(s.sigPhone) + '</div>' +
+      '<div><span style="color:#f37a6e;font-weight:bold;">&#9679;</span>&nbsp; ' + esc(s.sigAddress) + '</div>' +
+      '</div></td></tr></table>' + wrapClose;
+  }
+
+  fallbackCopy(text, done) {
+    try {
+      const ta = document.createElement('textarea');
+      ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
+      document.body.appendChild(ta); ta.focus(); ta.select();
+      document.execCommand('copy');
+      document.body.removeChild(ta);
+    } catch (e) {}
+    done();
+  }
+  copySig = () => {
+    const html = this.buildSigHtml();
+    const done = () => {
+      this.setState({ copied: true });
+      clearTimeout(this._t);
+      this._t = setTimeout(() => this.setState({ copied: false }), 1900);
+    };
+    try {
+      if (navigator.clipboard && navigator.clipboard.write && window.ClipboardItem) {
+        const item = new ClipboardItem({
+          'text/html': new Blob([html], { type: 'text/html' }),
+          'text/plain': new Blob([html], { type: 'text/plain' }),
+        });
+        navigator.clipboard.write([item]).then(done, () => this.fallbackCopy(html, done));
+      } else {
+        this.fallbackCopy(html, done);
+      }
+    } catch (e) {
+      this.fallbackCopy(html, done);
+    }
+  };
+
+  renderVals() {
+    const s = this.state;
+    const dark = s.sigDark;
+    const setSrc = (url) => (el) => { if (el) el.src = url; };
+    return {
+      // logo image refs (src set at runtime → keeps bundler happy + works offline)
+      capLightRef: setSrc(this.logoUrl('carre', this.resolve(s.capVariant, false))),
+      capDarkRef: setSrc(this.logoUrl('carre', this.resolve(s.capVariant, true))),
+      shirtLightRef: setSrc(this.logoUrl('carre', this.resolve(s.shirtVariant, false))),
+      shirtDarkRef: setSrc(this.logoUrl('carre', this.resolve(s.shirtVariant, true))),
+      placeFrontRef: setSrc(this.logoUrl('carre', s.teeBackDark ? 'blanc' : 'couleur')),
+      placeBackRef: setSrc(this.logoUrl('carre', s.teeBackDark ? 'blanc' : 'couleur')),
+      sigRef: setSrc(this.logoUrl('carre', dark ? 'blanc' : 'couleur')),
+      // cap
+      capChips: this.buildChips(s.capVariant, (v) => this.setState({ capVariant: v })),
+      capLightLogo: this.logoUrl('carre', this.resolve(s.capVariant, false)),
+      capDarkLogo: this.logoUrl('carre', this.resolve(s.capVariant, true)),
+      // shirt
+      shirtChips: this.buildChips(s.shirtVariant, (v) => this.setState({ shirtVariant: v })),
+      shirtLightLogo: this.logoUrl('carre', this.resolve(s.shirtVariant, false)),
+      shirtDarkLogo: this.logoUrl('carre', this.resolve(s.shirtVariant, true)),
+      // t-shirt cœur + dos
+      placeFrontGrad: s.teeBackDark ? 'teePF_D' : 'teePF_L',
+      placeBackGrad: s.teeBackDark ? 'teePB_D' : 'teePB_L',
+      placeStroke: s.teeBackDark ? '#0a1d3a' : '#cdc9c0',
+      placeCollarStroke: s.teeBackDark ? '#0d2244' : '#d3cfc6',
+      placeSeam: s.teeBackDark ? '#26456c' : '#cfcbc2',
+      placeLogo: this.logoUrl('carre', s.teeBackDark ? 'blanc' : 'couleur'),
+      placeBlend: s.teeBackDark ? 'normal' : 'multiply',
+      placeBadge: s.teeBackDark ? 'marine · logo blanc' : 'blanc cassé · logo couleur',
+      setPlaceLight: () => this.setState({ teeBackDark: false }),
+      setPlaceDark: () => this.setState({ teeBackDark: true }),
+      placeLightBtn: this.chipStyle(!s.teeBackDark),
+      placeDarkBtn: this.chipStyle(s.teeBackDark),
+      // signature fields
+      sigFields: [
+        { key: 'name', label: 'Pr\u00e9nom NOM', value: s.sigName, onChange: this.setField('sigName') },
+        { key: 'role', label: 'Fonction / r\u00f4le', value: s.sigRole, onChange: this.setField('sigRole') },
+        { key: 'email', label: 'E-mail', value: s.sigEmail, onChange: this.setField('sigEmail') },
+        { key: 'phone', label: 'T\u00e9l\u00e9phone', value: s.sigPhone, onChange: this.setField('sigPhone') },
+        { key: 'address', label: 'Adresse', value: s.sigAddress, onChange: this.setField('sigAddress') },
+      ],
+      sigName: s.sigName, sigRole: s.sigRole, sigEmail: s.sigEmail, sigPhone: s.sigPhone, sigAddress: s.sigAddress,
+      sigDark: dark,
+      sigLogo: this.logoUrl('carre', dark ? 'blanc' : 'couleur'),
+      sigCanvasBg: dark ? '#0e2746' : '#ffffff',
+      sigNameColor: dark ? '#ffffff' : '#122e51',
+      sigTextColor: dark ? '#dbe3ee' : '#122e51',
+      sigMutedColor: dark ? '#8aa0bd' : '#6a7686',
+      setSigLight: () => this.setState({ sigDark: false }),
+      setSigDark: () => this.setState({ sigDark: true }),
+      sigLightBtn: this.chipStyle(!dark) + 'flex:1;',
+      sigDarkBtn: this.chipStyle(dark) + 'flex:1;',
+      copySig: this.copySig,
+      copyLabel: s.copied ? 'Copié \u2713' : 'Copier le code HTML',
+    };
+  }
+}
+</script>
+</body>
+</html>
